@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    background-color: #14213d;
+}
+.container{
+    background-color: #fca311;
+    width: 30%;
+    min-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 0;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px white;
+}
+.timer-Display{
+    width: 100%;
+    background: #e5e5e5;
+    padding: 40px 0;
+    font-family: "Roboto", sans-serif;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    border-radius: 10px 10px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+                rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+                rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset;
+}
+.laps{
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.buttons{
+    width: 85%;
+    margin: 60px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.buttons button{
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #141313;
+    border: none;
+    font-family:  "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+                rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.buttons button:hover{
+    background-color:#141313 ;
+    color: #ffffff;
+    border: 3px solid #312828;
+    padding: 7px 17px;
+    
+} 
