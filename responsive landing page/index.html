@@ -1,204 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="swiper-bundle.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G-karts</title>
+    <link rel="shortcut icon" href="https://sidcupfamilygolf.com/wp-content/themes/puttosaurus/favicons/favicon-32x32.png" type="image/x-icon"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- header -->
-    <header>
-        <div class="header">
-            <a href="#" class="logo">shopPy</a>
-            <ul class="sidebar">
-                <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Policies</a></li>
-            </ul>
-            <ul class="mainbar">
-                <li><a href="#" class="menu-items hideMobile">Home</a></li>
-                <li><a href="#" class="menu-items hideMobile">About Us</a></li>
-                <li><a href="#" class="menu-items hideMobile">Policies</a></li>
-                <li><a href="#"><i id="theme-icon" class="fa-regular fa-moon"></i></a></li>
-                <li onclick=showSidebar()><a href="#" class="hideComp"><i class="fa-solid fa-bars"></i></a></li>
-            </ul>
-        </div>
-    </header>
-
-    <!-- main -->
-    <div class="main">
-        <div class="text">
-            <p>#NEW ARRIVALS</p>
-            <h1>Simplify <br>Everything <br>For You.</h1>
-            <p>Your fashion and style destination</p><br><br>
-            <button>Explore Now</button>
-        </div>
-        <div class="img-box">
-            <img src="images/main-1.png" class="back-img">
-            <img src="images/main-2.png" class="main-img">
-        </div>
+    <div id="nav">
+      <img src="assets/logo.png" width="120"alt=""/>
+      <h4>SHOP NOW</h4>
+      <h4>Best Sellers</h4>
+      <h4>Today's Deals</h4>
+      <h4>your Wishlist</h4>
+      <h4>Sign In</h4>
     </div>
-    
-    <!-- hero -->
-    <div class="hero">
-        <div class="card">
-            <img src="images/img1.avif" alt="">
-            <div class="intro">
-                <h1>Summer Sale</h1>
-                <p>Bestsellers in Women's Indian Clothing. Prices starts from 699.</p>
-            </div>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+    <video autoplay loop muted src="assets/video.mp4"></video>
+    <div id="main">
+      <div id="page1">
+        <h1>EXPLORE. ENJOY. SHOP.</h1>
+        <h2>WELCOME TO G-KARTS!</h2>
+        <p>
+            Whether you’re looking for casual wear, formal attire, or the latest seasonal trends, we have something for everyone. Enjoy a seamless shopping experience with easy navigation, secure payment options, and fast delivery. Shop now and elevate your wardrobe with G-KARTSkarts!
+        </p>
+        <div id="arrow">
+          <i class="ri-arrow-down-line"></i>
         </div>
-        <div class="card">
-            <img src="images/img2.avif" alt="">
-            <div class="intro">
-                <h1>Monsoon Sale</h1>
-                <p>Customers’ Most-Loved Fashion for you starting at 799.</p>
-            </div>
+      </div>
+      <div id="page2">
+        <div id="scroller">
+          <div id="scroller-in">
+            <h4>TOP RANGE</h4>
+            <h4>G-KARTS</h4>
+            <h4>SUMMER SALE</h4>
+            <h4>PREMIUM</h4>
+            <h4>LIVE</h4>
+          </div>
+          <div id="scroller-in">
+            <h4>TOP RANGE</h4>
+            <h4>G-KARTS</h4>
+            <h4>SUMMER SALE</h4>
+            <h4>PREMIUM</h4>
+            <h4>LIVE</h4>
+          </div>
         </div>
-        <div class="card">
-            <img src="images/img4.avif" alt="">
-            <div class="intro">
-                <h1>Winter Sale</h1>
-                <p>Under ₹499 | Pocket-friendly fashion</p>
-            </div>
+        <div id="about-us">
+          <div id="about-us-in">
+            <h3>ABOUT US</h3>
+            <p>
+              Welcome to G-KARTS, where fashion meets passion. Founded with a vision to redefine style and comfort, G-KARTS is your go-to destination for trendy and high-quality clothing. Our journey began with a simple idea: to create a brand that celebrates individuality and empowers people to express themselves through fashion.
+            </p>
+          </div>
         </div>
+        <div id="cards-container">
+          <div class="card" id="card1">
+            <div class="overlay">
+              <h4>Summer sale</h4>
+              <p>
+                Get ready to refresh your wardrobe with our sizzling summer sale! Enjoy up to 50% off on our latest collection of stylish and comfortable clothing. Hurry, these hot deals won’t last long!
+              </p>
+            </div>
+          </div>
+          <div class="card" id="card2">
+            <div class="overlay">
+              <h4>Recommended</h4>
+              <p>
+                Discover our top picks that customers love! Handpicked for their style, comfort, and quality, these pieces are must-haves for your wardrobe. Don’t miss out on these favorites – shop now and see why they’re so popular!
+              </p>
+            </div>
+          </div>
+          <div class="card" id="card3">
+            <div class="overlay">
+              <h4>Our Brands</h4>
+              <p>
+                Explore a curated selection of top brands. From renowned designers to emerging labels, our collection features the best in fashion. Discover your new favorites and elevate your wardrobe with pieces that stand out.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="green-div">
+          <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt=""/>
+          <h4>
+            SIGN UP FOR G-KARTS AND SPECIAL OFFERS STRAIGHT TO YOUR INBOX
+          </h4>
+          <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt="" />
+        </div>
+      </div>
+      <div id="page3">
+        <p>
+          Our mission is to provide our customers with the best shopping experience possible. We believe that fashion should be accessible to all, and we strive to offer a diverse range of clothing that caters to different tastes and preferences. Our collections are carefully curated to ensure that every piece reflects our dedication to style, comfort, and quality.
+        </p>
+        <img
+          id="colon1"
+          src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-left.svg"
+          alt=""
+        />
+        <img
+          id="colon2"
+          src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-right.svg"
+          alt=""
+        />
+      </div>
+      <div id="page4">
+        <h1>WHAT ARE YOU LOOKING?</h1>
+        <div class="page4-elem">
+          <div class="elem">
+            <h2>FOR HER/HIM</h2>
+            <img src="assets/pg4-1.avif" alt="">
+          </div>
+          <div class="elem">
+            <h2>FOR KIDS</h2>
+            <img src="assets/pg4-2.avif" alt="">
+          </div>
+          <div class="elem">
+            <h2>FOR TEENS</h2>
+            <img src="assets/pg4-3.avif" alt="">
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-footer.svg" alt=""/>
+        <div id="f2">
+          <h3>G-KARTS</h3>
+          <h3>about us</h3>
+          <h3>location</h3>
+        </div>
+        <div id="f3">
+          <h3>Privacy Policy</h3>
+          <h3>Blogs</h3>
+          <h3>Contact us</h3>
+        </div>
+        <div id="f4">
+          <h3>
+            address <br />
+            TEL: 0000 000 0000 <br />
+            GET DIRECTIONS <br />
+          </h3>
+        </div>
+      </div>
     </div>
-
-    <!-- slider -->
-    <div class="slider">
-        <div class="swiper mySwiper">
-            <p>Special Offers</p>
-            <div class="box-sec swiper-wrapper">
-                <div class="box swiper-slide">
-                    <img src="images/slider1.avif" alt="">
-                    <div class="box-text">
-                        <span>Baby Boys & Baby Girls T-shirt (Multicolor)</span>
-                        <p>Special Price: ₹370</p>
-                    </div>
-                </div>
-                <div class="box swiper-slide">
-                    <img src="images/slider2.avif" alt="">
-                    <div class="box-text">
-                        <span>Men's Polo Shirt</span>
-                        <p>Special Price: ₹699</p>
-                    </div>
-                </div>
-                <div class="box swiper-slide">
-                    <img src="images/slider3.avif" alt="">
-                    <div class="box-text">
-                        <span>Men's Cruze French Terry Cotton Relaxed Fit Hoodie</span>
-                        <p>Special Price: ₹999</p>
-                    </div>
-                </div>
-                <div class="box swiper-slide">
-                    <img src="images/slider4.avif" alt="">
-                    <div class="box-text">
-                        <span>Men's Cotton Hooded Sweatshirt</span>
-                        <p>Special Price: ₹649</p>
-                    </div>
-                </div>
-                <div class="box swiper-slide">
-                    <img src="images/slider5.avif" alt="">
-                    <div class="box-text">
-                        <span>Women's Rayon One Piece Midi Length Wrap Dress</span>
-                        <p>Special Price: ₹799</p>
-                    </div>
-                </div>
-                <div class="box swiper-slide">
-                    <img src="images/slider6.avif" alt="">
-                    <div class="box-text">
-                        <span>Women Cotton Full Sleeves Long Overcoat</span>
-                        <p>Special Price: ₹824</p>
-                    </div>
-                </div>
-                <div class="box swiper-slide">
-                    <img src="images/slider7.avif" alt="">
-                    <div class="box-text">
-                        <span>Women's Rayon Collared Neck Cardigan With Pockets</span>
-                        <p>Special Price: ₹474</p>
-                    </div>
-                </div>
-                <div class="box swiper-slide">
-                    <img src="images/slider8.avif" alt="">
-                    <div class="box-text">
-                        <span>Winter Jacket for Men Quilted Hooded Winter Jackets </span>
-                        <p>Special Price: ₹1499</p>
-                    </div>
-                </div>
-                <div class="box swiper-slide">
-                    <img src="images/slider9.avif" alt="">
-                    <div class="box-text">
-                        <span>Women's Winter Coat Trench Long Sleeves Over Coat </span>
-                        <p>Special Price: ₹3199</p>
-                    </div>
-                </div>
-                <div class="box swiper-slide">
-                    <img src="images/slider10.avif" alt="">
-                    <div class="box-text">
-                        <span>Women's Oversized Shirts</span>
-                        <p>Special Price: ₹780</p>
-                    </div>
-                </div><div class="box swiper-slide">
-                    <img src="images/slider11.avif" alt="">
-                    <div class="box-text">
-                        <span>ASTER FASHION Olive Green Jumpsuit</span>
-                        <p>Special Price: ₹850</p>
-                    </div>
-                </div>
-                <div class="box swiper-slide">
-                    <img src="images/slider12.avif" alt="">
-                    <div class="box-text">
-                        <span>Woman's Printed Silk Satin Shirt</span>
-                        <p>Special Price: ₹499</p>
-                    </div>
-                </div>
-                <div class="box swiper-slide">
-                    <img src="images/slider13.avif" alt="">
-                    <div class="box-text">
-                        <span>Party wear dresses for women in all sizes</span>
-                        <p>Special Price: ₹899</p>
-                    </div>
-                </div>
-                <div class="box swiper-slide">
-                    <img src="images/slider14.avif" alt="">
-                    <div class="box-text">
-                        <span>EraSpooky Women's Nun Costume Dress</span>
-                        <p>Special Price: ₹3970</p>
-                    </div>
-                </div>
-                <div class="box swiper-slide">
-                    <img src="images/slider15.avif" alt="">
-                    <div class="box-text">
-                        <span>Boys cotton shirt and pants for summer</span>
-                        <p>Special Price: ₹470</p>
-                    </div>
-                </div>
-                <div class="box swiper-slide">
-                    <img src="images/slider16.avif" alt="">
-                    <div class="box-text">
-                        <span>Woolen collored jackets for women</span>
-                        <p>Special Price: ₹870</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-next slider-btn"></div>
-            <div class="swiper-button-prev slider-btn"></div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </div>
-    <hr>
-
-    <!-- footer -->
-    <footer>
-        <p>Copyright &copy; shopPy.com | All rights reserved</p>
-    </footer>
-
-
-    <script src="swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A==" crossorigin="anonymous"referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
